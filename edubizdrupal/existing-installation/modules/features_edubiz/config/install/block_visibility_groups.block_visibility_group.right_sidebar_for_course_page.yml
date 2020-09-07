@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - system
+id: right_sidebar_for_course_page
+label: 'Right sidebar for course page'
+logic: or
+conditions:
+  64cefc83-04ee-4562-9822-dd943a158d9e:
+    id: request_path
+    pages: "/course-list\r\n/taxonomy/term/15\r\n/taxonomy/term/16\r\n/taxonomy/term/17\r\n"
+    negate: false
+    context_mapping: {  }
+    uuid: 64cefc83-04ee-4562-9822-dd943a158d9e
+  cb6f0cbb-f85c-44f9-ab29-4618712eafa5:
+    id: 'entity_bundle:node'
+    bundles:
+      course: course
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: cb6f0cbb-f85c-44f9-ab29-4618712eafa5
+allow_other_conditions: true

@@ -1,0 +1,172 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.course.body
+    - field.field.node.course.comment
+    - field.field.node.course.field_course_category
+    - field.field.node.course.field_course_duration
+    - field.field.node.course.field_course_feature
+    - field.field.node.course.field_course_image
+    - field.field.node.course.field_course_level
+    - field.field.node.course.field_course_price
+    - field.field.node.course.field_course_student
+    - field.field.node.course.field_course_teacher
+    - image.style.thumbnail
+    - node.type.course
+  module:
+    - comment
+    - image
+    - path
+    - text
+id: node.course.default
+targetEntityType: node
+bundle: course
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 31
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  comment:
+    weight: 44
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_course_category:
+    weight: 37
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_course_duration:
+    weight: 38
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_course_feature:
+    weight: 46
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_course_image:
+    weight: 40
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_course_level:
+    weight: 39
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_course_price:
+    weight: 42
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_course_student:
+    weight: 43
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_course_teacher:
+    weight: 41
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  gva_box_layout:
+    type: options_select
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  gva_breadcrumb:
+    type: options_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  gva_header:
+    type: options_select
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  gva_node_class:
+    type: string_textfield
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  gva_node_layout:
+    type: options_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: options_select
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

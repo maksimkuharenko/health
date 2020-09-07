@@ -1,0 +1,99 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.course.body
+    - field.field.node.course.comment
+    - field.field.node.course.field_course_category
+    - field.field.node.course.field_course_duration
+    - field.field.node.course.field_course_feature
+    - field.field.node.course.field_course_image
+    - field.field.node.course.field_course_level
+    - field.field.node.course.field_course_price
+    - field.field.node.course.field_course_student
+    - field.field.node.course.field_course_teacher
+    - image.style.normal_size
+    - node.type.course
+  module:
+    - image
+    - options
+    - text
+    - user
+id: node.course.teaser
+targetEntityType: node
+bundle: course
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 120
+    third_party_settings: {  }
+    region: content
+  field_course_category:
+    type: entity_reference_label
+    weight: 8
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_course_duration:
+    type: string
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_course_image:
+    type: image
+    weight: 7
+    label: hidden
+    settings:
+      image_style: normal_size
+      image_link: content
+    third_party_settings: {  }
+    region: content
+  field_course_level:
+    type: list_key
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_course_price:
+    type: string
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_course_student:
+    type: string
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_course_teacher:
+    type: entity_reference_label
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment: true
+  field_course_feature: true

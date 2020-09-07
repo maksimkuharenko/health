@@ -1,0 +1,32 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.course
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - views
+  theme:
+    - gavias_edubiz
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_edubiz_exposedformcoursecourse_filter
+theme: gavias_edubiz
+region: drupal_message
+weight: -12
+provider: null
+plugin: 'views_exposed_filter_block:course-course_filter'
+settings:
+  id: 'views_exposed_filter_block:course-course_filter'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

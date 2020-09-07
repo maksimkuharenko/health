@@ -1,0 +1,35 @@
+name: 'Features Edubiz'
+description: 'Features Edubiz - Import content type, field, view ... for Edubiz Theme'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - block_visibility_groups
+  - comment
+  - contact
+  - ctools
+  - datetime
+  - field
+  - field_collection
+  - file
+  - gavias_blockbuilder
+  - gavias_view
+  - gavias_views_magazine
+  - gaviasthemer
+  - image
+  - imce
+  - menu_ui
+  - node
+  - options
+  - path
+  - pathauto
+  - rdf
+  - system
+  - taxonomy
+  - text
+  - user
+  - views
+  - views_infinite_scroll
+  - gavias_hook_themer
+  - config_update
+  - features
