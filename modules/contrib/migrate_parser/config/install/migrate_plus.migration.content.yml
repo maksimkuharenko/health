@@ -24,7 +24,7 @@ source:
   # track_changes: true
   # Copy the example JSON file in artifacts folder to sites/default/files folder.
   urls:
-    - 'http://localhost:7171/pages?query={push{source_data_id,title,%20html}}'
+    - 'https://thin-rabbit-54.loca.lt/pages?query={push{source_data_id,title,%20html}}'
   #  - 'http://healthcare.int//sites/default/files/migrate_json_content/content_test.json'
   #  - 'public://migrate_json_content/content_test.json'
   # An xpath-like selector corresponding to the items to be imported.
